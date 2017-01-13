@@ -7,7 +7,7 @@ sap.ui.define([
 	return Controller.extend("CRUDV1.controller.App", {
 		formatter: Formatter,
 		onInit: function(){
-
+			//hello
 			//this.buildTable();
 			this.buildTable2();
 			//this.buildTable3();
