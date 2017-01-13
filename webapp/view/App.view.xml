@@ -1,0 +1,89 @@
+<mvc:View controllerName="CRUDV1.controller.App" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+	xmlns="sap.m">
+	<App>
+<pages>
+			<Page title="CRUD" id ="pageCRUD">
+				<content>
+					<!--this is for binding data to table via controller-->
+					
+					<Table
+						id="table"
+						headerText="Product List"
+						mode="SingleSelectMaster"
+						>
+						<columns>
+							<Column>
+								<Text text="Produc ID" />
+							</Column>  
+							<Column>
+								<Text text="Product Name" />
+							</Column> 
+								<Column>
+								<Text text="Descriptiont" />
+							</Column> 
+							<Column>
+								<Text text="Rating" />
+							</Column>  
+							<Column>
+								<Text text="Price" />
+							</Column> 
+						</columns>
+					</Table>
+					<!--<Table
+						id="table"
+						headerText="Product List"
+						mode="SingleSelectMaster"
+						items="{
+							path : 'odataModel>/Products'
+						}"
+						>
+						<columns>
+							<Column>
+								<Text text="Produc ID" />
+							</Column>  
+							<Column>
+								<Text text="Product Name" />
+							</Column> 
+								<Column>
+								<Text text="Descriptiont" />
+							</Column> 
+							<Column>
+								<Text text="Rating" />
+							</Column>  
+							<Column>
+								<Text text="Price" />
+							</Column>
+						</columns>
+						
+						<items>
+						<ColumnListItem>
+							<cells>
+								<Text text = "{odataModel>ID}"></Text>
+								<Text text = "{odataModel>Name}"></Text>
+								<Text text = "{odataModel>Description}"></Text>
+								<RatingIndicator value = "{odataModel>Rating}"></RatingIndicator>
+								<Text text = "{odataModel>Price}"></Text>
+							</cells>
+						
+						</ColumnListItem>
+						
+						</items>
+						
+						
+					</Table>-->
+					
+					
+				</content>
+				<footer>
+					<Toolbar>
+						<ToolbarSpacer/>
+						<Button text="Create" press="createFunction" />
+						<Button text="Edit" press="editFunction" />
+						<Button text="Delete" press="deleteFunction" />
+						<Button text="EditDialog" press="editFunctionDialog"/>
+					</Toolbar>
+				</footer>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
